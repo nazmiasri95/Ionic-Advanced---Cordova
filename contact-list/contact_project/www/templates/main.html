@@ -1,0 +1,22 @@
+<ion-view view-title="Project 3: Contact List">
+	<ion-content padding="true" class="note-content">
+		<div class="row">
+			<div class="col">
+				<h2 class="text-center">Main Page</h2>
+			</div>
+		</div>
+
+		<ul class="list">
+		    <li class="item item-text-wrap" ng-repeat="contact in contacts">
+		    	<h4>{{ contact.displayName }}</h4>
+		    	<p></p>
+		    </li>
+		</ul>
+		
+		<button class="button button-block button-calm" ng-click="getAllContacts()">See all contacts</button>
+		<a class="button button-block button-assertive" ui-sref="page_2">Page 2</a>
+		<a class="button button-block button-positive" ui-sref="page_3">Page 3</a>
+		<a class="button button-block button-balanced" ui-sref="page_4">Page 4</a>
+
+	</ion-content>
+</ion-view>

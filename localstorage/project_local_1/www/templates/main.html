@@ -1,9 +1,27 @@
 <ion-view view-title="Project 1: local storage">
 	<ion-content padding="true" class="note-content">
+		<div class="card" ng-show="saved">
+		  <div class="item item-text-wrap text-success text-center">
+		  	Successfully saved !
+		  </div>
+		</div>
+
 		<div class="row">
 			<div class="col">
 				<h2 class="text-center">Main Page</h2>
 			</div>
+		</div>
+
+		<div class="list list-inset">	
+			<form ng-submit="save_name(name)">
+				<label class="item item-input">
+					<input type="text" placeholder="First Name" ng-model="name.fname">
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="Last Name" ng-model="name.lname">
+				</label>
+				<button class="button button-block button-positive" type="submit">Save</button>
+			</form>
 		</div>
 		
 		<a class="button button-block button-calm" ui-sref="page_1">Page 1</a>
